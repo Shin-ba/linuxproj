@@ -5,4 +5,4 @@ if [ -z "$directory" ]; then
 	directory='.'
 fi
 
-find "$directory" -type f | xargs grep -nH "$pattern"
+find "$directory" -type f | xargs grep -nH "$pattern" > /dev/null
